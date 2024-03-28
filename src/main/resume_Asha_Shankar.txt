@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Asha}{Shankar}{ \href{mailto:ashashankar29@gmail.com}
+ 408.505.5823 | \href{mailto:ashashankar29@gmail.com}{ashashankar29@gmail.com} | \href{https://www.linkedin.com/in/asha-shankar-a9b94747/}{LinkedIn}
+ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Achievements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\textbullet{}\textbf{16+} years of programming experience  \\
+\textbullet{} \textbf{10+} years of experience in Retail, \\
+Payments and Supply Chain domains \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\descript{Proficient}
+\textbullet{} Java \textbullet{} Data Structures and Algorithms  \\
+\descript{Familiar}
+\textbullet{} SQL Server \textbullet{} HBase  \\  \textbullet{} Kafka
+\textbullet{} Microservices  \textbullet{} Unix tools and Shell scripting \textbullet{} GIT \textbullet{} AngularJS\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+\descript{Bachelors of Engineering in Electronics and Communication}
+\location{SRSIT | June 2005 | Bangalore, India}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Apple}
+\descript{| Senior Software Engineer }
+\location{Oct 2023 - Present | Cupertino, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed from scratch a payment driver for Apple stores handling over 100,000 credit card transactions per day.
+\item Developed micro-services that handle over 10,000 transactions per second for Payment, Tender and Store management.
+\item Reviewed pull requests for our team by catching and identifying any bugs in code as well as business flows.
+\item Mentored 2 engineers so as to optimize system performance and improve code quality.
+\item Achieved 80\% test coverage with Junits.
+\item Lead and drove production release for new store opening day contributing to over 100000\$ worth sales on day one.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Infor}
+\descript{| Principal Software Engineer }
+\location{Dec 2012 – June 2023 | Oakland, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed \& developed milestone system that dynamically match millions of supply chain updates each day to millions of customer's shipments and orders.
+\item Re-architected and moved shipments system from relational database to HBASE. Aggregate queries improved by over 50\%. Got promoted to Module lead for exceeding company goals for this project.
+\item Developed a UI Grid layout for customers to view the milestones from HBASE, making it easy to perform aggregate queries.
+\item  Worked with UI team to define and design UI services that forms a bridge to new and legacy systems. This enabled to support both legacy and new customers.
+\item Having deep domain knowledge of Supply chain and Transportation industry. Able to provide scalable and efficient designs to Product managers.
+\item Worked on critical production issues, worked on query optimizations and improving the performance by 25\%.
+\item Worked with 4 interns on their code reviews to improve code quality, tracking JIRA tasks and helping in estimating the time for a new task.
+\item promoted to Senior Software Engineer for gaining in-depth knowledge of the product and for fast turn around of features and bugs.
+\item As Software Engineer, Built application features and bugs on Supply Chain Visibility Team.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Apple}
+\descript{|  Tech Mahindra Software Engineer }
+\location{March 2006 – December 2012 | Cupertino, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked as an Onsite team manager at Cupertino. Managed a team of 4 in India.
+\item Assigned and Tracked Tasks, debriefed the requirement to offshore team and took the responsibility to deliver the product on time.
+\item Developed the PCI compliant payment technical solution using SSLV3 securing the Card data and customer information.
+\item  Developed a Unix utility application to identify a detailed analysis on sales of a particular day, month and year, which helped the production team for issue tracking. This utility helped testing effort substantially.
+\item Bench marking - Have developed a utility to measure the time taken for a transaction which helped measure the code performance.
+\item Have been a critical member during production support. Have raised and fixed Emergency SRs to keep the Sales ticking. Was part of end-to-end release cycle of the product including post-deployment support.
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage}
+\end{document}
